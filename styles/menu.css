@@ -3,12 +3,12 @@ body
 {
 	text-align: center;
 	Justify-content: center;
-	background-image: url(../images.jpg);
+	background-image: url(../imgs/images.jpg);
 	background-size: 100%;
 }
 .menu
 {
-    border:  2px solid white;
+	order:  2px solid white;
     box-shadow: inset 0 0 5px yellow, 0 0 10px yellow;
     border-radius: 10px;
 }
@@ -140,7 +140,7 @@ section:before
 	transition-delay: 0.4s;
 }
 
-.botonNeon
+.neonBtn
 {
 	position: relative;
 	display: inline-block;
@@ -160,7 +160,7 @@ section:before
 	text-align: center;
 	
 }
-.botonNeon:hover
+.neonBtn:hover
 {
 	color: white;
 	text-shadow: 2px 2px 2px rgb(0, 0, 0);
@@ -172,11 +172,11 @@ section:before
 	transition-delay: 0.2s;
 
 }
-.botonNeon:nth-child(2)
+.neonBtn:nth-child(2)
 {
 	filter: hue-rotate(80deg);
 }
-.botonNeon::before
+.neonBtn::before
 {
 	content: '';
 	position: absolute;
@@ -191,7 +191,7 @@ section:before
 	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.5s;
 	transition-delay: 0.2s, 0.2s,0s,0s;	
 }
-.botonNeon:hover::before
+.neonBtn:hover::before
 {
 	width: 60%;
 	height: 100%;
@@ -200,7 +200,7 @@ section:before
 				5px 0 0 #f9d131;
 	transition-delay: 0s, 0.2s, 0.2s, 0.2s;
 }
-.botonNeon::after
+.neonBtn::after
 {
 	content: '';
 	position: absolute;
@@ -215,7 +215,7 @@ section:before
 	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.2s;
 	transition-delay: 0.2s, 0.2s,0s,0s;	
 }
-.botonNeon:hover::after
+.neonBtn:hover::after
 {
 	width: 60%;
 	height: 100%;
@@ -224,14 +224,14 @@ section:before
 				-5px 0 0 #f9d131;
 	transition-delay: 0s, 0.2s, 0.2s, 0.2s;
 }
-.botonNeon span
+.neonBtn span
 {
 	color: white;
 	position: relative;
 	z-index: 100;
 }
 
-.botonNeon span:hover
+.neonBtn span:hover
 {
 	transition: 0.2s;
 }
@@ -242,7 +242,12 @@ section:before
 	margin-left: 9em;
 }
 
-h1 {
+H1 {
 	color: white;
 	text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.chart{
+	margin-right: 7%;
+	padding: 10px ;
 }
